@@ -1,0 +1,16 @@
+.row {
+  @apply flex items-center gap-[7px];
+}
+.link {
+  font-size: 14px;
+  color: #686868;
+}
+.point {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #4e64f9;
+}
+li {
+  @apply flex items-center gap-[7px];
+}

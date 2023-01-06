@@ -1,0 +1,28 @@
+.news {
+  background: #f8f8f8;
+  padding-top: 42px;
+  position: relative;
+}
+h2 {
+  margin-top: 25px;
+  margin-bottom: 63px;
+  font-family: "InterBold";
+  color: #1e2123;
+  font-size: 30px;
+}
+.newsgrid {
+  @apply grid gap-8 items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+  justify-self: center;
+}
+.main_search {
+  @apply w-[95%] flex items-center h-5 py-[55px] m-auto mb-3 lg:w-[850px] lg:h-[1000px]  lg:absolute lg:items-start md:px-[100px] relative;
+
+  right: 0;
+
+  background: linear-gradient(90deg, #f4f7ff 0%, #eef0ff 94.5%);
+
+  border-radius: 40px;
+}
+.dropdown {
+  @apply absolute right-[300px] top-[150px] bg-white p-4 z-10 rounded-[10px];
+}

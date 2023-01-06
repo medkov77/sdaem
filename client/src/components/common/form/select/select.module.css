@@ -1,0 +1,44 @@
+.full_select {
+  @apply w-full relative md:w-[150px];
+}
+.select {
+  @apply h-10 pl-3  overflow-hidden flex items-center cursor-pointer relative;
+  border: none;
+  background: #f8f8f8;
+  outline: none;
+  color: #686868;
+
+  border-radius: 20px;
+}
+.select:hover {
+  background: rgba(102, 78, 249, 0.1);
+}
+.select::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../../../../assets/img/main/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 87% center;
+}
+.opt {
+  @apply my-3 cursor-pointer;
+}
+.list {
+  @apply flex flex-col absolute left-0 top-[70px] w-full bg-white rounded-[10px]  py-3 gap-5 text-[#1E2123];
+  box-shadow: 0px 0px 40px rgba(135, 124, 202, 0.3);
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.opt {
+  @apply w-full h-7 m-0 px-4;
+}
+.opt:hover {
+  background: #f8f8f8;
+}
+.image {
+  @apply mr-2;
+}

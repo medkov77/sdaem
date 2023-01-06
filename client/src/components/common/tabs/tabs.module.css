@@ -1,0 +1,90 @@
+.tabs {
+  @apply m-auto;
+  font-family: "InterSemiBold";
+}
+.row {
+  @apply flex text-white justify-between  max-w-[650px] min-h-[54px] mx-2;
+  background: rgba(45, 57, 136, 1);
+  border-radius: 10px 10px 0px 0px;
+  z-index: 10;
+}
+.tab {
+  @apply px-3 text-[10px] md:text-[14px];
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
+}
+.tab.active {
+  color: #664ef9;
+  background: #fff;
+}
+.tab_item {
+  @apply max-w-[1200px]  bg-white p-4 mx-2;
+  border-radius: 0px 10px 10px 10px;
+}
+.item_row {
+  @apply grid gap-4 grid-cols-1  md:grid-cols-2 xl:grid-cols-6 lg:grid-cols-3;
+}
+.form_item {
+  @apply flex flex-col pr-5;
+  border-right: 1px solid #664ef9;
+}
+.form_item:last-child {
+  border: none;
+}
+.inputs {
+  @apply flex items-center;
+}
+.item_title {
+  color: #bdbdbd;
+  line-height: 17px;
+  text-align: left;
+}
+.select {
+  @apply w-full md:w-[150px] h-10 pl-3 mt-3 overflow-hidden;
+  border: none;
+  background: #f8f8f8;
+  outline: none;
+  color: #686868;
+  appearance: none;
+  background: url("../../../assets/img/main/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 87% center;
+  border-radius: 20px;
+}
+.select:focus {
+  border: 2px solid rgba(102, 78, 249, 0.8);
+  border-radius: 20px;
+}
+.opt {
+  @apply my-3;
+}
+.price {
+  background: #f8f8f8;
+  border-radius: 20px;
+  max-width: 80px;
+  height: 37px;
+  border: none;
+  outline: none;
+  color: #686868;
+  padding-left: 14px;
+  display: inline-block;
+  margin-top: 11px;
+}
+.defis {
+  @apply mx-1;
+}
+.right_item {
+  @apply flex gap-1 m-auto;
+  font-family: "InterRegular";
+  color: #1e2123;
+}
+.map {
+  @apply flex items-center;
+}
+.map_img {
+  width: 12px;
+}
+.btn {
+  @apply h-[44px] pr-10 pl-3 rounded-[22px] bg-[#FFD54F] m-auto hover:bg-[#FEC100] transition-all bg-[url("../../../assets//img/main/btnShevron.svg")] bg-no-repeat bg-[center_right_1rem];
+  color: #242424;
+}

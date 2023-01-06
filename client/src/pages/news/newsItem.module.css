@@ -1,0 +1,42 @@
+.cart {
+  @apply m-auto md:m-0;
+  background: #fff;
+  max-width: 406px;
+  z-index: 3;
+}
+h3 {
+  font-family: "InterBold";
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 30px;
+}
+p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #686868;
+  margin: 15px 0 45px 0;
+}
+.row {
+  @apply flex items-center justify-between;
+}
+.date {
+  color: #8291a3;
+  background: #f8f8f8;
+  border-radius: 18px;
+  padding: 10px;
+}
+.read {
+  color: #664ef9;
+  padding: 10px 15px;
+  background: rgba(102, 78, 249, 0.1);
+  border-radius: 17px;
+}
+.wrapper {
+  padding: 0 20px 23px 20px;
+}
+.image {
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 227px;
+  margin: auto;
+}

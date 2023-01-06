@@ -1,0 +1,44 @@
+.wrapper {
+    @apply py-10 lg:px-20 flex justify-between flex-wrap;
+}
+.left {
+    @apply max-w-[300px] pr-8;
+}
+.right {
+    @apply flex-grow-[3];
+}
+.links {
+    @apply grid lg:grid-rows-4  lg:grid-flow-col md:grid-cols-2 grid-cols-1 grid-flow-row gap-4;
+    grid-template-rows: 34px 34px 34px 34px;
+}
+.bold {
+    @apply text-[#1E2123];
+    font-family: "interBold";
+    line-height: 1;
+}
+.links > li {
+}
+.normal {
+    color: #8291a3;
+    line-height: 1;
+}
+.subtitle {
+    color: #8291a3;
+    font-size: 12px;
+    font-family: "interSemiBold";
+    margin-top: 10px;
+    margin-bottom: 36px;
+}
+.data {
+    font-size: 11px;
+}
+.ul {
+    margin: 0;
+    padding: 0;
+}
+.down_row {
+    @apply mt-12 flex justify-between flex-wrap gap-4;
+}
+.pay {
+    @apply flex gap-4 flex-wrap;
+}

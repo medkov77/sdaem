@@ -1,0 +1,203 @@
+.main_container {
+}
+.wrapper {
+  @apply pb-[120px] pt-[82px] text-center relative z-10 flex flex-col mt-3 lg:mt-0;
+
+  background: linear-gradient(360deg, #7e6af3 15.95%, #6540cd 63.1%);
+  border-radius: 0px 0px 40px 40px;
+}
+.back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/img/main/bg.png");
+  z-index: -1;
+}
+.bg {
+}
+.title {
+  color: #fff;
+  font-size: 30px;
+  font-family: "InterBold";
+  margin-bottom: 50px;
+}
+.span {
+  color: #ffd54f;
+  font-size: 30px;
+  font-family: "InterBold";
+}
+.photo {
+  @apply max-w-[980px] flex flex-wrap gap-8;
+}
+
+.big_img {
+  @apply w-full md:w-[516px] max-h-[270px] relative rounded-[10px] overflow-hidden;
+}
+.big_img img {
+  @apply w-full;
+}
+.small_img img {
+  @apply w-full;
+}
+.small_img {
+  @apply w-full md:w-[407px] max-h-[270px] relative rounded-[10px] overflow-hidden;
+}
+.overlay {
+  @apply absolute w-full h-full bg-[#1E2123] opacity-[0.4] rounded-[10px] z-[3];
+}
+
+.img_content {
+  @apply absolute w-full h-full p-9 z-10;
+}
+.img_subtitle {
+  text-transform: uppercase;
+  font-size: 13px;
+  background-image: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.img_title {
+  @apply text-white text-[25px] my-5;
+}
+.buttons {
+  @apply hidden md:flex flex-wrap gap-4;
+}
+.round_arrow {
+  @apply absolute bottom-4 right-4 cursor-pointer z-10;
+}
+.row {
+  @apply flex justify-between pt-20 flex-wrap lg:flex-nowrap lg:gap-0 gap-4;
+}
+.saidbar {
+  @apply flex-grow-[5] flex flex-col gap-[40px];
+}
+.points {
+  @apply my-10;
+}
+.flat_title {
+  font-family: "InterSemiBold";
+  background: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 15px;
+}
+.flats {
+  @apply relative;
+}
+.flat_subtitle {
+  font-family: "InterBold";
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+.flat_back {
+  @apply absolute w-[800px] h-[1025px]  opacity-[0.1] top-[-20px] right-[-11px] z-[-2];
+  background: linear-gradient(90deg, #94afff 0%, #4e64f9 94.5%);
+  border-radius: 40px 0px 0px 40px;
+}
+.inputs {
+  @apply absolute right-8 top-3 z-10 flex gap-8;
+}
+.inputs div {
+  @apply bg-white rounded-[10px];
+}
+.inputs div:hover {
+  @apply bg-white rounded-[10px];
+}
+.total {
+  @apply max-w-[400px] mt-20;
+}
+.total_row {
+  @apply flex justify-between items-center;
+}
+.count {
+  @apply text-[60px];
+  font-family: "InterBold";
+}
+.total_span {
+  @apply text-[60px] text-[#664EF9] ml-2;
+  font-family: "InterBold";
+}
+.total_text {
+  @apply text-[#8291A3] opacity-[0.6];
+  font-family: "InterSemiBold";
+}
+
+.down_bg {
+  @apply pt-20 pb-[227px] mt-[100px] mx-auto max-w-[1300px] text-white flex flex-col items-center gap-5 relative;
+  background: linear-gradient(360deg, #7e6af3 15.95%, #6540cd 63.1%);
+}
+.down_bg::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/img/main/bg.png");
+  background-position: center;
+  background-size: cover;
+}
+.down_title {
+  font-size: 25px;
+  font-family: "InterBold";
+}
+.down_text {
+  font-size: 16px;
+}
+.white_points {
+  @apply absolute top-10 right-[140px];
+}
+.advantage {
+  @apply mt-[-120px] z-10 relative grid grid-cols-3 gap-8;
+}
+.down_points {
+  @apply mt-10 flex justify-end mr-[168px];
+}
+.paragraf_points {
+  @apply flex justify-end mt-10 mb-8 mr-[80px];
+}
+.down_paragraf {
+}
+.paragraf_wrapper {
+  @apply grid grid-cols-3 gap-10;
+}
+.paragraf_img {
+  float: left;
+}
+.paragraf_subtitle {
+  background: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "interSemiBold";
+  margin-bottom: 15px;
+}
+.paragraf_left {
+  @apply col-span-2 text-[#1E2123] relative;
+}
+.paragraf_left p {
+  line-height: 1.5;
+  margin-top: 0;
+}
+.paragraf_left p + p {
+  margin-bottom: 30px;
+}
+.left_points {
+  @apply absolute top-[300px] left-[380px];
+}
+.paragraf_title {
+  @apply text-[#1E2123] text-[25px] mb-8;
+  font-family: "interBold";
+}

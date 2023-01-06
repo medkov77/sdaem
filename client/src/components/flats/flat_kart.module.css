@@ -1,0 +1,79 @@
+.kart {
+  @apply pb-3 max-w-[400px] rounded-[10px] bg-[#fffefe];
+}
+.wrapper {
+  @apply px-4;
+}
+.image {
+  @apply flex justify-center bg-[#E4E2E2] rounded-[10px] overflow-hidden;
+}
+.row {
+  @apply flex items-center justify-between mt-4 mb-5;
+}
+.price {
+  font-size: 20px;
+  font-family: "InterBold";
+  color: #664ef9;
+}
+.day {
+  color: #bdbdbd;
+}
+.item {
+  @apply flex gap-2 text-[#686868] bg-[#F8F8F8] rounded-[18px] px-2 py-2;
+  font-family: "InterSemiBold";
+}
+sup {
+  top: 8px;
+}
+.adress {
+  @apply flex text-black text-[16px] mb-3;
+  font-family: "InterSemiBold";
+}
+.adress:last-child {
+  margin-bottom: none;
+}
+.icon {
+  width: 15px;
+  margin-right: 12px;
+}
+.map {
+  @apply flex;
+}
+.department {
+  @apply ml-8 relative;
+}
+
+.department::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #bdbdbd;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.text {
+  @apply text-[#8291A3] text-[12px] mb-2;
+}
+.line {
+  @apply h-[1px] bg-[#664EF9] opacity-[0.2] my-3;
+}
+.buttons {
+  @apply flex justify-between;
+}
+.contaks {
+  @apply px-3 py-3 rounded-[18px] text-[#664EF9] text-[14px] max-w-[125px];
+  box-shadow: 0px 5px 20px rgba(0, 96, 206, 0.1);
+  font-family: "InterBold";
+}
+.details {
+  @apply px-3 py-3 rounded-[18px] text-[#FEC100] text-[14px] max-w-[125px];
+  font-family: "InterBold";
+  background: rgba(255, 213, 79, 0.1);
+  transition: all 0.3s;
+}
+.details:hover {
+  background: rgba(255, 213, 79, 0.2);
+}

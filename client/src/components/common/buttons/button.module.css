@@ -1,0 +1,31 @@
+.btn {
+  @apply flex items-center gap-3;
+}
+.filter_btn {
+  @apply text-white py-2 px-3 bg-[#664EF9] rounded-[16px] w-fit hover:bg-[#612BFB] transition-all;
+}
+.total_btn {
+  @apply rounded-[17px] text-white w-fit h-fit py-[10px] px-5 text-[14px] text-left pl-4 relative;
+  background: linear-gradient(90deg, #9d94ff 0%, #6b50e9 94.5%);
+  transition: all 0.3s;
+  box-shadow: 0px 15px 40px rgba(0, 96, 206, 0.15);
+  font-family: "InterBold";
+}
+
+.total_btn:hover {
+  background: linear-gradient(90deg, #867cfc 0%, #6929f3 94.5%);
+  box-shadow: 0px 15px 40px rgba(0, 96, 206, 0.15);
+}
+.open_btn {
+  @apply rounded-[17px] text-[#1E2123] max-w-[180px] py-[10px] text-[14px] text-left pl-4 bg-[#fff] z-10;
+}
+
+.yellow_btn {
+  @apply rounded-[17px] text-[#242424]  py-[10px]  text-[14px] text-left px-4 w-fit h-fit;
+  background: linear-gradient(106.06deg, #ffd54f 1.12%, #fec100 97.96%);
+  box-shadow: 0px 15px 40px rgba(254, 193, 0, 0.15);
+  font-family: "InterBold";
+}
+.yellow_btn:hover {
+  background: #fec100;
+}

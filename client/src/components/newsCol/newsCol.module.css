@@ -1,0 +1,9 @@
+.news_col {
+  @apply bg-[#fffefe] rounded-[10px] py-8 px-6;
+
+  box-shadow: 0px 20px 40px rgba(135, 124, 202, 0.15);
+}
+.title {
+  @apply text-[#1E2123] text-[25px];
+  font-family: "interBold";
+}

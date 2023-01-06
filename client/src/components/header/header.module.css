@@ -1,0 +1,27 @@
+.wrapper {
+  @apply h-10;
+  background: #f8f8f8;
+}
+.row {
+  @apply flex justify-between items-center;
+}
+.logo {
+  width: 134px;
+  height: 19px;
+  @apply mb-3 md:mb-0;
+}
+.secong_line {
+  @apply mt-5;
+}
+.second_container {
+  @apply justify-around flex items-center flex-wrap;
+}
+.meunu_btn {
+  @apply w-8 lg:hidden;
+}
+.mobile_menu {
+  @apply absolute top-0 left-0 right-0 bottom-0 bg-gray-50 z-20 flex flex-col p-5;
+}
+.close {
+  @apply absolute top-2 right-2;
+}

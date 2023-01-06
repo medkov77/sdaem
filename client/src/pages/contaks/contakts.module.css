@@ -1,0 +1,91 @@
+.contaks {
+  @apply w-full h-[100vh] relative pt-[70px] text-white;
+  background: linear-gradient(360deg, #7e6af3 15.95%, #6540cd 63.1%);
+}
+.contaks::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: url("../../assets/img/main/bg.png");
+}
+.row {
+  @apply flex justify-between gap-8;
+}
+.title {
+  @apply text-white text-[30px];
+}
+.text {
+  @apply text-white;
+}
+.col {
+  @apply text-white relative z-20;
+}
+.col_form {
+  @apply flex-grow-[4] relative z-20;
+}
+.order {
+  @apply flex flex-col gap-5 mb-7;
+}
+.order_item {
+  @apply flex  gap-5;
+}
+
+.worning {
+  @apply flex items-center gap-6 p-7 rounded-[10px];
+  background: rgba(80, 57, 189, 0.5);
+}
+
+.worning_text {
+  @apply text-white text-[16px] m-0;
+}
+.form {
+  @apply bg-white p-10 rounded-[10px];
+}
+.form_row {
+  @apply flex justify-between gap-8;
+}
+.label {
+  @apply text-[#686868] mb-4;
+}
+.input {
+  @apply p-4 rounded-[30px] text-[#1E2123]  bg-[#F8F8F8];
+
+  outline: none;
+}
+
+.input:focus {
+  border: 2px solid rgba(102, 78, 249, 0.8);
+}
+.tetxarea {
+  @apply w-full p-2 text-[#686868] min-h-[230px] rounded-[10px] my-5;
+  outline: none;
+}
+.tetxarea:focus {
+  border: 2px solid rgba(102, 78, 249, 0.8);
+}
+.btn {
+  @apply bg-[#664EF9] py-3 px-5 rounded-[33px] text-white w-fit m-auto;
+}
+.btn:disabled {
+  @apply bg-[#b8b6c7];
+}
+.error {
+  @apply text-red-600 my-2;
+}
+.send {
+  @apply absolute top-0 left-0 right-0 bottom-0 z-30 h-[100vh] flex items-center justify-center;
+  background: rgba(46, 46, 46, 0.7);
+}
+.send_window {
+  @apply p-20 bg-white rounded-[10px] flex flex-col items-center justify-center;
+}
+.send_title {
+  font-size: 25px;
+  color: #000000;
+  font-family: "interBold";
+  margin-bottom: 30px;
+}

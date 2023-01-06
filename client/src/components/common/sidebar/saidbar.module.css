@@ -1,0 +1,22 @@
+.saidbar {
+}
+.title {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "InterBold";
+  margin-bottom: 15px;
+}
+.row {
+  @apply flex justify-between;
+}
+.sity {
+  color: #feb700;
+  line-height: 27px;
+  transition: all 0.3s;
+}
+.sity:hover {
+  transform: translateX(10px);
+}
+.count {
+  color: #bdbdbd;
+}

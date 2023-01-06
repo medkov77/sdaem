@@ -1,0 +1,10 @@
+.slider {
+  @apply relative;
+}
+.next {
+  @apply w-10 h-10 bg-[url("../../assets/img//main/next.svg")]  absolute bottom-0 top-[330px] right-[600px];
+}
+
+.prev_arrow {
+  @apply w-10 h-10 bg-[url("../../assets/img//main/prev.svg")] absolute bottom-0 top-[330px] left-[600px];
+}
