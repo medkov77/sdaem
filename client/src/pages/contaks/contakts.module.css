@@ -77,8 +77,8 @@
   @apply text-red-600 my-2;
 }
 .send {
-  @apply absolute top-0 left-0 right-0 bottom-0 z-30 h-[100vh] flex items-center justify-center;
-  background: rgba(46, 46, 46, 0.7);
+  @apply fixed top-0 left-0 right-0 bottom-0 z-30 h-[100vh] flex items-center justify-center;
+  background: rgba(46, 46, 46, 0.8);
 }
 .send_window {
   @apply p-20 bg-white rounded-[10px] flex flex-col items-center justify-center;

@@ -1,0 +1,66 @@
+.overlay {
+  @apply fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center;
+  background: linear-gradient(360deg, #7e6af3 15.95%, #6540cd 63.1%);
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: url("../../../assets/img/main/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.window {
+  @apply bg-white  p-12 rounded-[10px] max-w-[845px] z-10;
+}
+.title {
+  @apply text-black text-[25px] mb-8;
+  font-family: "interBold";
+}
+.login_title {
+  @apply text-black text-[25px] mb-8 text-center;
+  font-family: "interBold";
+}
+.row {
+  @apply flex justify-between gap-12;
+}
+.form {
+  @apply w-[50%];
+}
+.input {
+  @apply bg-[#F7F7F7] py-4 rounded-[30px] outline-none w-full block pl-12;
+}
+.text {
+  @apply w-[50%];
+}
+.input_item {
+  @apply relative mb-5;
+}
+.icon {
+  @apply absolute top-[19px] left-[20px];
+}
+.btn {
+  @apply rounded-[17px] text-[#242424]  py-[10px]  text-[14px]  px-4 w-full h-fit text-center;
+  background: linear-gradient(106.06deg, #ffd54f 1.12%, #fec100 97.96%);
+  box-shadow: 0px 15px 40px rgba(254, 193, 0, 0.15);
+  font-family: "InterBold";
+}
+.btn:disabled {
+  background: #e5e5e5;
+}
+.input.error {
+  border: 1px solid #eb5757;
+}
+.error_message {
+  color: #eb5757;
+}
+.login_text {
+  text-align: center;
+}
+.login_link {
+  color: #664ef9;
+}

@@ -28,6 +28,23 @@ const Header = () => {
   const closeMobileMenu = () => {
     setMobileMenu(false);
   };
+  const isLoggedIn = useAppSelector((state) => state.userReducer.isLoggedIn);
+  const userName = useAppSelector((state) => state.userReducer.auth?.name);
+  console.log("user", userName);
+  const login = isLoggedIn
+    ? {
+        name: userName || "",
+        link: "/",
+        class: "mobile_item",
+      }
+    : {
+        name: "Вход",
+        link: "login",
+        class: "mobile_item",
+      };
+  const register = isLoggedIn
+    ? { name: "выход", link: "exit", class: "login" }
+    : { name: "регистрация", link: "auth", class: "login" };
   const firstLine: links[] = [
     { name: "Главная", link: "/", class: "first_item" },
     { name: "Новости", link: "/news", class: "first_item" },
@@ -49,7 +66,8 @@ const Header = () => {
       imgPos: "right",
       class: "bookmarks",
     },
-    { name: "Вход и регистрация", link: "login", class: "login" },
+    login,
+    register,
   ];
   const secondLine: links[] = [
     {
@@ -88,7 +106,8 @@ const Header = () => {
       imgPos: "right",
       class: "mobile_item",
     },
-    { name: "Вход и регистрация", link: "login", class: "mobile_item" },
+
+    login,
     {
       name: "Квартиры на сутки",
       link: "/for_a_day",
